@@ -23,7 +23,7 @@ class StoryAPI {
   private baseURL: string;
 
   constructor() {
-    this.baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    this.baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:9999';
     
     this.client = axios.create({
       baseURL: this.baseURL,

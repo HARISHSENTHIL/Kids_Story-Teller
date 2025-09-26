@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     app_version: str = Field(default="1.0.0", env="APP_VERSION")
     debug: bool = Field(default=False, env="DEBUG")
     host: str = Field(default="0.0.0.0", env="HOST")
-    port: int = Field(default=8000, env="PORT")
+    port: int = Field(default=9999, env="PORT")
     
     # LLM Provider Configuration
     llm_provider: Literal["openai", "huggingface", "openai_compatible"] = Field(
